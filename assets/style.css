@@ -1,0 +1,39 @@
+:root {
+    --white: #fff;
+}
+
+* {
+    background: black;
+    font-family: monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: var(--white);
+    display: inline;
+    padding: 15px 30px;
+    font-size: 300%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about img {
+    display: block;
+    width: 32%;
+    height: 80%;
+    border-radius: 80%;
+}
+
+.block h2, p {
+    color: var(--white);
+    justify-content: center;
+    padding: 0px 10px 0px 20px;
+}
