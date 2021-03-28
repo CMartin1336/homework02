@@ -9,20 +9,21 @@
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 nav ul li {
     list-style-type: none;
     color: var(--white);
     display: inline;
-    padding: 15px 30px;
     font-size: 300%;
+    flex-shrink: 1;
 }
 
 .about {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding: 2% 10% 0 10%;
 }
 
 .about img {
@@ -30,10 +31,14 @@ nav ul li {
     width: 32%;
     height: 80%;
     border-radius: 80%;
+    flex-shrink: 0.6;
+}
+
+.block {
+    flex-grow: 2;
 }
 
 .block h2, p {
     color: var(--white);
-    justify-content: center;
     padding: 0px 10px 0px 20px;
 }
