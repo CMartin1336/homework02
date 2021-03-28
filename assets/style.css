@@ -20,6 +20,16 @@ nav ul li {
     flex-shrink: 1;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
 .about {
     display: flex;
     align-items: center;
@@ -41,4 +51,15 @@ nav ul li {
 .block h2, p {
     color: var(--white);
     padding: 0px 10px 0px 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly
+}
+
+h3 {
+    color: var(--white);
+    font-size: 175%;
+    text-align: center;
 }
