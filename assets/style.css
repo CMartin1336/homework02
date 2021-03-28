@@ -17,7 +17,7 @@ nav ul li {
     color: var(--white);
     display: inline;
     font-size: 300%;
-    flex-shrink: 1;
+    flex: 0 1 auto;
 }
 
 nav ul li a {
@@ -28,6 +28,10 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
     color: orangered;
+}
+
+figcaption {
+    color: var(--white);
 }
 
 .about {
@@ -96,3 +100,10 @@ div {
     text-decoration: none;
     color: orangered;
 }
+
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+      nav ul li {
+          font-size: 150%;
+      }
+  }
