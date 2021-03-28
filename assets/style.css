@@ -55,11 +55,44 @@ nav ul li a:hover {
 
 .projects {
     display: flex;
-    justify-content: space-evenly
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects a:hover {
+    box-shadow: 0 15px 15px;
 }
 
 h3 {
     color: var(--white);
     font-size: 175%;
     text-align: center;
+}
+
+div {
+    padding: 2% 2%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact ul li {
+    list-style-type: none;
+    color: var(--white);
+    display: inline-block;
+    font-size: 150%;
+    padding: 2%;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contact li a:hover {
+    text-decoration: none;
+    color: orangered;
 }
