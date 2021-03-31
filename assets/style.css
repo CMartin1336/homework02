@@ -105,6 +105,9 @@ div {
       nav ul li {
           font-size: 100%
       }
+      .projects {
+          flex-shrink: 1;
+      }
   }
 
   /* Small smartphones */
@@ -112,4 +115,7 @@ div {
       nav ul li {
           font-size: 200%
       }
+      .projects {
+        flex-shrink: 1;
+    }
 }
