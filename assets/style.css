@@ -102,8 +102,14 @@ div {
 
   /* Small smartphones */
   @media only screen and (max-width: 576px) {
+      nav ul li {
+          font-size: 100%
+      }
   }
 
   /* Small smartphones */
   @media only screen and (min-width: 577px) and (max-width: 962px) {
+      nav ul li {
+          font-size: 200%
+      }
 }
