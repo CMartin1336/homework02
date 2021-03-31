@@ -17,7 +17,7 @@ nav ul li {
     color: var(--white);
     display: inline;
     font-size: 300%;
-    flex: 0 1 auto;
+    display: flex;
 }
 
 nav ul li a {
@@ -45,7 +45,6 @@ figcaption {
     width: 32%;
     height: 80%;
     border-radius: 80%;
-    flex-shrink: 0.6;
 }
 
 .block {
