@@ -3,119 +3,79 @@
 }
 
 * {
-    background: black;
-    font-family: monospace;
+    background: rgb(36, 44, 44);
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    color: var(--white);
+    text-align: center;
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
+    padding-bottom: 2%;
 }
 
-nav ul li {
-    list-style-type: none;
-    color: var(--white);
-    display: inline;
-    font-size: 300%;
-    display: flex;
+nav span {
+    font-size: 200%;
+    padding-right: 5px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: var(--white);
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    color: orangered;
-}
-
-figcaption {
-    color: var(--white);
+    display: inline-block;
+    font-size: 150%;
+    padding-left: 15px;
 }
 
 .about {
     display: flex;
     align-items: center;
-    padding: 2% 10% 0 10%;
+    margin: 0 5%;
+}
+
+#about {
+    margin-left: 2%;
 }
 
 .about img {
     display: block;
-    width: 32%;
-    height: 80%;
+    width: 30%;
     border-radius: 80%;
 }
 
-.block {
-    flex-grow: 2;
-}
-
-.block h2, p {
-    color: var(--white);
-    padding: 0px 10px 0px 20px;
-}
-
-.projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.projects a:hover {
-    box-shadow: 0 15px 15px;
-}
-
-h3 {
-    color: var(--white);
-    font-size: 175%;
-    text-align: center;
-}
-
-div {
-    padding: 2% 2%;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.contact ul li {
-    list-style-type: none;
-    color: var(--white);
-    display: inline-block;
-    font-size: 150%;
-    padding: 2%;
-}
-
-.contact li a {
+.contact a {
     text-decoration: none;
-    color: var(--white);
 }
 
-.contact li a:hover {
-    text-decoration: none;
-    color: orangered;
-}
+@media screen and (max-width: 992px) {
+    nav span {
+        font-size: 150%;
+    }
 
-  /* Small smartphones */
-  @media only screen and (max-width: 576px) {
-      nav ul li {
-          font-size: 100%
-      }
-      .projects {
-          flex-shrink: 1;
-      }
+    nav a {
+        display: block;
+        font-size: 125%;
+    }
   }
 
-  /* Small smartphones */
-  @media only screen and (min-width: 577px) and (max-width: 962px) {
-      nav ul li {
-          font-size: 200%
-      }
-      .projects {
-        flex-shrink: 1;
+  @media screen and (max-width: 614px) {
+    nav span {
+        font-size: 115%;
     }
-}
+
+    nav a {
+        display: block;
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .projects img {
+        width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+      .about {
+          display: block;
+      }
+    }
